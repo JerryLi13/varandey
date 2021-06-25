@@ -1,0 +1,371 @@
+/*ОБНУЛЯЮЩИЙ СТИЛь*/
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+}
+input,
+button,
+textarea {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+//-webkit-overflow-scrolling: touch;
+//animation-play-state: paused !important;
+
+body {
+	width: 100%;
+	height: 100%;
+	line-height: 1;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&._loaded {
+	}
+}
+
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+	margin: 0 auto;
+	width: 100%;
+	flex: 1 1 auto;
+}
+h1 {
+	margin: 50px 0px 10px 0px;
+	font-size: 30px;
+	text-align: center;
+	color: blueviolet;
+	text-shadow: 2px 2px 2px black;
+}
+h2 {
+	margin: 20px 0px 20px 0px;
+	font-size: 30px;
+	text-align: center;
+	color: blueviolet;
+	text-shadow: 2px 2px 2px black;
+}
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+._container {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+//====================================================================================================
+.header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 30px;
+	background-color: cyan;
+	margin: 0px 0px 20px 0px;
+	border: 1px solid black;
+	// .header__content
+	&__content {
+	}
+	// .header__menu
+	&__menu {
+		display: flex;
+	}
+}
+.menu {
+}
+
+.menu {
+	// .menu__logo
+	&__logo {
+		margin: 0px 50px 0px 0px;
+		padding: 0px 0px 0px 15px;
+		font-size: 20px;
+		line-height: 25 / 20 * 100%;
+		color: salmon;
+		text-shadow: 1px 1px 1px black, -1px -1px 1px yellow;
+		letter-spacing: 1px;
+		flex: 0 1 auto;
+		animation-name: logo;
+		animation-duration: 4s;
+	}
+	@keyframes logo {
+		0% {
+			transform: translateX(-300px);
+		}
+		// 100% {
+		// 	left: 50%;
+		// }
+	}
+
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+		padding: 0px 5px 0px 5px;
+		flex: 0 1 800px;
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+	}
+	&__list > li {
+		margin: 0 auto;
+	}
+
+	// .menu__link
+	&__link {
+		font-size: 18px;
+		line-height: 25 / 18 * 100%;
+		padding: 0px 5px 0px 5px;
+		color: crimson;
+		text-shadow: 1px 1px 1px black;
+		&:hover {
+			color: hotpink;
+			transition: 0.5s;
+		}
+	}
+}
+.icon-menu {
+}
+
+// ==============================================================================
+.page {
+	// .page__content
+	&__content {
+		max-width: 840px;
+	}
+}
+.content {
+	// .content__text
+	&__text {
+		font-size: 20px;
+		color: black;
+		margin: 0 auto;
+		text-align: left;
+		margin: 0px 0px 0px 0px;
+		&:nth-child(1) {
+			font-size: 21px;
+			color: red;
+		}
+		&:nth-child(5) {
+			font-size: 21px;
+			text-transform: uppercase;
+		}
+	}
+}
+// ==============================================================================
+.page {
+	// .page__superheroes
+	&__superheroes {
+	}
+	// .page__container
+	&__container {
+		max-width: 840px;
+		width: 100%;
+	}
+	// .page__content
+	&__content {
+	}
+}
+.supermen {
+	font-size: 0px;
+	box-shadow: 2px 2px 5px gold, -2px -2px 5px greenyellow;
+	border-radius: 20px;
+	background-color: lightcyan;
+	margin: 0 auto;
+	// .supermen__imeg
+	&__imeg {
+		max-width: 130px;
+		width: 100%;
+		border-radius: 50%;
+		border: 3px solid red;
+		margin: 0px 12px 0px 0px;
+		overflow: hidden;
+		&:first-child {
+			position: relative;
+			top: 0px;
+			left: 0px;
+			animation-name: foto1;
+			animation-duration: 3s;
+			animation-timing-function: ease;
+		}
+		@keyframes foto1 {
+			0% {
+				left: -500px;
+				transform: rotate(-360deg);
+			}
+			100% {
+				left: 0px;
+			}
+		}
+		&:nth-child(2) {
+			position: relative;
+			top: 0px;
+			left: -700px;
+			animation-name: foto2;
+			animation-duration: 3s;
+			animation-delay: 2s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+		}
+		@keyframes foto2 {
+			0% {
+				transform: rotate(-360deg);
+			}
+			100% {
+				left: 0px;
+			}
+		}
+		&:nth-child(3) {
+			position: relative;
+			top: -500px;
+			left: 0px;
+			animation-name: foto3;
+			animation-duration: 3s;
+			animation-delay: 4s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+		}
+		@keyframes foto3 {
+			0% {
+				transform: rotate(-360deg);
+			}
+			100% {
+				top: 0px;
+			}
+		}
+		&:nth-child(4) {
+			position: relative;
+			top: -500px;
+			left: 0px;
+			animation-name: foto4;
+			animation-duration: 3s;
+			animation-delay: 6s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+		}
+		@keyframes foto4 {
+			0% {
+				transform: rotate(-360deg);
+			}
+			100% {
+				top: 0px;
+			}
+		}
+		&:nth-child(5) {
+			position: relative;
+			top: 0px;
+			right: -700px;
+			animation-name: foto5;
+			animation-duration: 3s;
+			animation-delay: 8s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+		}
+		@keyframes foto5 {
+			0% {
+				transform: rotate(-360deg);
+			}
+			100% {
+				right: 0px;
+			}
+		}
+		&:last-child) {
+			position: relative;
+			top: 0px;
+			right: -700px;
+			animation-name: foto6;
+			animation-duration: 3s;
+			animation-delay: 10s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+		}
+		@keyframes foto6 {
+			0% {
+				transform: rotate(-360deg);
+			}
+			100% {
+				right: 0px;
+			}
+		}
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+}
+
+// ==============================================================================
+.footer {
+	// .footer__text
+	&__text {
+		font-size: 24px;
+		color: crimson;
+		text-shadow: 2px 2px 2px black;
+		text-align: center;
+		margin: 0px 0px 10px 0px;
+	}
+}
