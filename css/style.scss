@@ -111,7 +111,7 @@ h2 {
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 ._container {
-	max-width: 1100px;
+	// max-width: 1100px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -140,6 +140,8 @@ h2 {
 .menu {
 	// .menu__logo
 	&__logo {
+		max-width: 400px;
+		width: 100%;
 		margin: 0px 50px 0px 0px;
 		padding: 0px 0px 0px 15px;
 		font-size: 20px;
@@ -147,9 +149,20 @@ h2 {
 		color: salmon;
 		text-shadow: 1px 1px 1px black, -1px -1px 1px yellow;
 		letter-spacing: 1px;
-		flex: 0 1 auto;
+		// flex: 0 1 100px;
 		animation-name: logo;
 		animation-duration: 4s;
+		@media (max-width: 560px) {
+			font-size: 15px;
+			line-height: 25 / 15 * 100%;
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 0px 5px;
+		}
+		@media (max-width: 454px) {
+			font-size: 10px;
+			line-height: 25 / 10 * 100%;
+			margin: 0px 0px 0px 0px;
+		}
 	}
 	@keyframes logo {
 		0% {
@@ -183,6 +196,15 @@ h2 {
 		padding: 0px 5px 0px 5px;
 		color: crimson;
 		text-shadow: 1px 1px 1px black;
+		@media (max-width: 560px) {
+			font-size: 15px;
+			line-height: 25 / 15 * 100%;
+		}
+		@media (max-width: 454px) {
+			font-size: 10px;
+			line-height: 25 / 10 * 100%;
+		}
+
 		&:hover {
 			color: hotpink;
 			transition: 0.5s;
@@ -200,6 +222,7 @@ h2 {
 	}
 }
 .content {
+	padding: 0px 5px 0px 5px;
 	// .content__text
 	&__text {
 		font-size: 20px;
@@ -236,10 +259,10 @@ h2 {
 	box-shadow: 2px 2px 5px gold, -2px -2px 5px greenyellow;
 	border-radius: 20px;
 	background-color: lightcyan;
-	margin: 0 auto;
+	margin: 0px 5px 0px 5px;
 	// .supermen__imeg
 	&__imeg {
-		max-width: 130px;
+		max-width: 128.2px;
 		width: 100%;
 		border-radius: 50%;
 		border: 3px solid red;
@@ -334,7 +357,7 @@ h2 {
 				right: 0px;
 			}
 		}
-		&:last-child) {
+		&:last-child {
 			position: relative;
 			top: 0px;
 			right: -700px;
