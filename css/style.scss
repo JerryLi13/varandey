@@ -100,6 +100,9 @@ h1 {
 	text-align: center;
 	color: blueviolet;
 	text-shadow: 2px 2px 2px black;
+	@media (max-width: 562px) {
+		font-size: 20px;
+	}
 }
 h2 {
 	margin: 20px 0px 20px 0px;
@@ -107,6 +110,9 @@ h2 {
 	text-align: center;
 	color: blueviolet;
 	text-shadow: 2px 2px 2px black;
+	@media (max-width: 562px) {
+		font-size: 20px;
+	}
 }
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
@@ -196,13 +202,13 @@ h2 {
 		padding: 0px 5px 0px 5px;
 		color: crimson;
 		text-shadow: 1px 1px 1px black;
-		@media (max-width: 560px) {
+		@media (max-width: 562px) {
 			font-size: 15px;
 			line-height: 25 / 15 * 100%;
 		}
 		@media (max-width: 454px) {
-			font-size: 10px;
-			line-height: 25 / 10 * 100%;
+			font-size: 12px;
+			line-height: 25 / 12 * 100%;
 		}
 
 		&:hover {
@@ -233,10 +239,22 @@ h2 {
 		&:nth-child(1) {
 			font-size: 21px;
 			color: red;
+			@media (max-width: 562px) {
+				font-size: 15px;
+				line-height: 25 / 15 * 100%;
+			}
 		}
 		&:nth-child(5) {
 			font-size: 21px;
 			text-transform: uppercase;
+			@media (max-width: 562px) {
+				font-size: 15px;
+				line-height: 25 / 15 * 100%;
+			}
+		}
+		@media (max-width: 562px) {
+			font-size: 15px;
+			line-height: 25 / 15 * 100%;
 		}
 	}
 }

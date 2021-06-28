@@ -118,12 +118,24 @@ h1 {
   text-shadow: 2px 2px 2px black;
 }
 
+@media (max-width: 562px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
 h2 {
   margin: 20px 0px 20px 0px;
   font-size: 30px;
   text-align: center;
   color: blueviolet;
   text-shadow: 2px 2px 2px black;
+}
+
+@media (max-width: 562px) {
+  h2 {
+    font-size: 20px;
+  }
 }
 
 ._container {
@@ -220,7 +232,7 @@ h2 {
   text-shadow: 1px 1px 1px black;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 562px) {
   .menu__link {
     font-size: 15px;
     line-height: 166.66667%;
@@ -229,8 +241,8 @@ h2 {
 
 @media (max-width: 454px) {
   .menu__link {
-    font-size: 10px;
-    line-height: 250%;
+    font-size: 12px;
+    line-height: 208.33333%;
   }
 }
 
@@ -261,9 +273,30 @@ h2 {
   color: red;
 }
 
+@media (max-width: 562px) {
+  .content__text:nth-child(1) {
+    font-size: 15px;
+    line-height: 166.66667%;
+  }
+}
+
 .content__text:nth-child(5) {
   font-size: 21px;
   text-transform: uppercase;
+}
+
+@media (max-width: 562px) {
+  .content__text:nth-child(5) {
+    font-size: 15px;
+    line-height: 166.66667%;
+  }
+}
+
+@media (max-width: 562px) {
+  .content__text {
+    font-size: 15px;
+    line-height: 166.66667%;
+  }
 }
 
 .page__container {
