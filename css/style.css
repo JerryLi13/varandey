@@ -314,7 +314,7 @@ h2 {
   margin: 0px 5px 0px 5px;
 }
 
-@media (max-width: 839px) {
+@media (max-width: 840px) {
   .supermen {
     font-size: 45px;
     display: -webkit-box;
