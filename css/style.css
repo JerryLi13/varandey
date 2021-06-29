@@ -152,6 +152,7 @@ h2 {
   background-color: cyan;
   margin: 0px 0px 20px 0px;
   border: 1px solid black;
+  z-index: 10;
 }
 
 .header__menu {
@@ -313,6 +314,18 @@ h2 {
   margin: 0px 5px 0px 5px;
 }
 
+@media (max-width: 562px) {
+  .supermen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .supermen__imeg {
   max-width: 128.2px;
   width: 100%;
@@ -332,6 +345,13 @@ h2 {
           animation-duration: 3s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
+}
+
+@media (max-width: 562px) {
+  .supermen__imeg:first-child {
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
 }
 
 @-webkit-keyframes foto1 {
@@ -372,6 +392,16 @@ h2 {
           animation-fill-mode: forwards;
 }
 
+@media (max-width: 562px) {
+  .supermen__imeg:nth-child(2) {
+    -webkit-animation-name: none;
+            animation-name: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
 @-webkit-keyframes foto2 {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -406,6 +436,16 @@ h2 {
           animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@media (max-width: 562px) {
+  .supermen__imeg:nth-child(3) {
+    -webkit-animation-name: none;
+            animation-name: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
 }
 
 @-webkit-keyframes foto3 {
@@ -444,6 +484,16 @@ h2 {
           animation-fill-mode: forwards;
 }
 
+@media (max-width: 562px) {
+  .supermen__imeg:nth-child(4) {
+    -webkit-animation-name: none;
+            animation-name: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
 @-webkit-keyframes foto4 {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -480,6 +530,16 @@ h2 {
           animation-fill-mode: forwards;
 }
 
+@media (max-width: 562px) {
+  .supermen__imeg:nth-child(5) {
+    -webkit-animation-name: none;
+            animation-name: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
 @-webkit-keyframes foto5 {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -514,6 +574,16 @@ h2 {
           animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@media (max-width: 562px) {
+  .supermen__imeg:last-child {
+    -webkit-animation-name: none;
+            animation-name: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
 }
 
 @-webkit-keyframes foto6 {

@@ -132,6 +132,7 @@ h2 {
 	background-color: cyan;
 	margin: 0px 0px 20px 0px;
 	border: 1px solid black;
+	z-index: 10;
 	// .header__content
 	&__content {
 	}
@@ -278,6 +279,11 @@ h2 {
 	border-radius: 20px;
 	background-color: lightcyan;
 	margin: 0px 5px 0px 5px;
+	@media (max-width: 562px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 	// .supermen__imeg
 	&__imeg {
 		max-width: 128.2px;
@@ -293,6 +299,9 @@ h2 {
 			animation-name: foto1;
 			animation-duration: 3s;
 			animation-timing-function: ease;
+			@media (max-width: 562px) {
+				animation-name: none;
+			}
 		}
 		@keyframes foto1 {
 			0% {
@@ -312,6 +321,12 @@ h2 {
 			animation-delay: 2s;
 			animation-timing-function: ease;
 			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
 		}
 		@keyframes foto2 {
 			0% {
@@ -330,6 +345,12 @@ h2 {
 			animation-delay: 4s;
 			animation-timing-function: ease;
 			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
 		}
 		@keyframes foto3 {
 			0% {
@@ -348,6 +369,12 @@ h2 {
 			animation-delay: 6s;
 			animation-timing-function: ease;
 			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
 		}
 		@keyframes foto4 {
 			0% {
@@ -366,6 +393,12 @@ h2 {
 			animation-delay: 8s;
 			animation-timing-function: ease;
 			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
 		}
 		@keyframes foto5 {
 			0% {
@@ -384,6 +417,12 @@ h2 {
 			animation-delay: 10s;
 			animation-timing-function: ease;
 			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
 		}
 		@keyframes foto6 {
 			0% {
