@@ -394,6 +394,7 @@ h2 {
 			position: relative;
 			top: 0px;
 			right: -700px;
+			// margin: 0px 12px 0px 0px;
 			animation-name: foto5;
 			animation-duration: 3s;
 			animation-delay: 8s;
@@ -416,7 +417,6 @@ h2 {
 		}
 		&:last-child {
 			position: relative;
-			margin: 0px 0px 0px 0px;
 			top: 0px;
 			right: -700px;
 			animation-name: foto6;
@@ -438,9 +438,6 @@ h2 {
 			100% {
 				right: 0px;
 			}
-		}
-		&:last-child {
-			margin: 0px 0px 0px 0px;
 		}
 	}
 }

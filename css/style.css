@@ -575,7 +575,6 @@ h2 {
 
 .supermen__imeg:last-child {
   position: relative;
-  margin: 0px 0px 0px 0px;
   top: 0px;
   right: -700px;
   -webkit-animation-name: foto6;
@@ -618,10 +617,6 @@ h2 {
   100% {
     right: 0px;
   }
-}
-
-.supermen__imeg:last-child {
-  margin: 0px 0px 0px 0px;
 }
 
 .name {
