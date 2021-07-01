@@ -311,7 +311,7 @@ h2 {
           box-shadow: 2px 2px 5px gold, -2px -2px 5px greenyellow;
   border-radius: 20px;
   background-color: lightcyan;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 5px 10px 5px;
 }
 
 @media (max-width: 840px) {
@@ -575,6 +575,7 @@ h2 {
 
 .supermen__imeg:last-child {
   position: relative;
+  margin: 0px 0px 0px 0px;
   top: 0px;
   right: -700px;
   -webkit-animation-name: foto6;
@@ -620,6 +621,41 @@ h2 {
 }
 
 .supermen__imeg:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.name__boy {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 140px;
+          flex: 0 1 140px;
+  font-size: 12px;
+  line-height: 125%;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 5px 0px 5px;
+  color: chocolate;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  text-align: center;
+}
+
+.name__boy:hover {
+  position: relative;
+  top: 2px;
+  color: chartreuse;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.name__boy:last-child {
   margin: 0px 0px 0px 0px;
 }
 

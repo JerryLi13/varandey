@@ -278,7 +278,7 @@ h2 {
 	box-shadow: 2px 2px 5px gold, -2px -2px 5px greenyellow;
 	border-radius: 20px;
 	background-color: lightcyan;
-	margin: 0px 5px 0px 5px;
+	margin: 0px 5px 10px 5px;
 	@media (max-width: 840px) {
 		font-size: 45px;
 		display: flex;
@@ -416,6 +416,7 @@ h2 {
 		}
 		&:last-child {
 			position: relative;
+			margin: 0px 0px 0px 0px;
 			top: 0px;
 			right: -700px;
 			animation-name: foto6;
@@ -443,8 +444,44 @@ h2 {
 		}
 	}
 }
-
 // ==============================================================================
+
+.page {
+	// .page__container
+	&__container {
+	}
+	// .page__content
+	&__content {
+	}
+}
+.name {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	// .name__boy
+	&__boy {
+		flex: 0 1 140px;
+		font-size: 12px;
+		line-height: 15 / 12 * 100%;
+		margin: 0px 0px 10px 0px;
+		padding: 0px 5px 0px 5px;
+		color: chocolate;
+		text-shadow: 0.5px 0.5px 0.5px black;
+		text-align: center;
+		&:hover {
+			position: relative;
+			top: 2px;
+			color: chartreuse;
+			transition: 1s;
+		}
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+}
+// ==============================================================================
+
 .footer {
 	// .footer__text
 	&__text {
