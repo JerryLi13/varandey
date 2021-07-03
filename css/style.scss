@@ -473,8 +473,148 @@ h2 {
 			color: chartreuse;
 			transition: 1s;
 		}
+		&:first-child {
+			position: relative;
+			top: 0px;
+			left: 0px;
+			animation-name: name;
+			animation-duration: 3s;
+			animation-timing-function: ease;
+			@media (max-width: 562px) {
+				animation-name: none;
+			}
+		}
+		@keyframes name {
+			0% {
+				left: -500px;
+				transform: rotate(0deg);
+			}
+			100% {
+				left: 0px;
+			}
+		}
+		&:nth-child(2) {
+			position: relative;
+			top: 0px;
+			left: -700px;
+			animation-name: name2;
+			animation-duration: 3s;
+			animation-delay: 2s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
+		}
+		@keyframes name2 {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				left: 0px;
+			}
+		}
+		&:nth-child(3) {
+			position: relative;
+			top: -500px;
+			left: 0px;
+			animation-name: name3;
+			animation-duration: 3s;
+			animation-delay: 4s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
+		}
+		@keyframes name3 {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				top: 0px;
+			}
+		}
+		&:nth-child(4) {
+			position: relative;
+			top: -500px;
+			left: 0px;
+			animation-name: name4;
+			animation-duration: 3s;
+			animation-delay: 6s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
+		}
+		@keyframes name4 {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				top: 0px;
+			}
+		}
+		&:nth-child(5) {
+			position: relative;
+			top: 0px;
+			right: -700px;
+			// margin: 0px 12px 0px 0px;
+			animation-name: name5;
+			animation-duration: 3s;
+			animation-delay: 8s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
+		}
+		@keyframes name5 {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				right: 0px;
+			}
+		}
 		&:last-child {
+			position: relative;
+			top: 0px;
+			right: -700px;
 			margin: 0px 0px 0px 0px;
+			animation-name: name6;
+			animation-duration: 3s;
+			animation-delay: 10s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			margin: 0px 0px 0px 0px;
+			@media (max-width: 562px) {
+				animation-name: none;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
+		}
+		@keyframes name6 {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				right: 0px;
+			}
 		}
 	}
 }
