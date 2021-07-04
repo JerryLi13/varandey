@@ -140,9 +140,12 @@ h2 {
 }
 
 p {
-  font-size: 20px;
+  display: inline-block;
+  padding: 0px 0px 0px 5px;
+  font-size: 2vw;
   line-height: 120%;
   font-weight: 700;
+  margin: 0px 0px 20px 0px;
   background: #020024;
   background: #020024;
   background: #020024;
@@ -655,8 +658,6 @@ p {
 }
 
 .name__boy:hover {
-  position: relative;
-  top: 2px;
   color: chartreuse;
   -webkit-transition: 1s;
   transition: 1s;
@@ -664,7 +665,6 @@ p {
 
 .name__boy:first-child {
   position: relative;
-  top: 0px;
   left: 0px;
   -webkit-animation-name: name;
           animation-name: name;
@@ -705,7 +705,6 @@ p {
 
 .name__boy:nth-child(2) {
   position: relative;
-  top: 0px;
   left: -700px;
   -webkit-animation-name: name2;
           animation-name: name2;
@@ -933,6 +932,23 @@ p {
   100% {
     right: 0px;
   }
+}
+
+.page__foto-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.foto-work__img {
+  width: 45%;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid blueviolet;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .footer__text {

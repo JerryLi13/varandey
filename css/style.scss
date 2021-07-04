@@ -116,9 +116,12 @@ h2 {
 	}
 }
 p {
-	font-size: 20px;
+	display: inline-block;
+	padding: 0px 0px 0px 5px;
+	font-size: 2vw;
 	line-height: 24 / 20 * 100%;
 	font-weight: 700;
+	margin: 0px 0px 20px 0px;
 	background: rgb(2, 0, 36);
 	background: rgb(2, 0, 36);
 	background: rgb(2, 0, 36);
@@ -484,14 +487,11 @@ p {
 		text-shadow: 0.5px 0.5px 0.5px black;
 		text-align: center;
 		&:hover {
-			position: relative;
-			top: 2px;
 			color: chartreuse;
 			transition: 1s;
 		}
 		&:first-child {
 			position: relative;
-			top: 0px;
 			left: 0px;
 			animation-name: name;
 			animation-duration: 3s;
@@ -511,7 +511,6 @@ p {
 		}
 		&:nth-child(2) {
 			position: relative;
-			top: 0px;
 			left: -700px;
 			animation-name: name2;
 			animation-duration: 3s;
@@ -634,6 +633,30 @@ p {
 		}
 	}
 }
+// ==============================================================================
+
+.page {
+	// .page__work
+	&__work {
+	}
+	// .page__foto-work
+	&__foto-work {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.foto-work {
+	// .foto-work__img
+	&__img {
+		width: 45%;
+		margin: 5px;
+		padding: 5px;
+		border: 2px solid blueviolet;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+}
+
 // ==============================================================================
 
 .footer {
