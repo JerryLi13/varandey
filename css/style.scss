@@ -82,6 +82,7 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	background-color: black;
 	&._loaded {
 	}
 }
@@ -122,15 +123,8 @@ p {
 	line-height: 24 / 20 * 100%;
 	font-weight: 700;
 	margin: 0px 0px 20px 0px;
-	background: rgb(2, 0, 36);
-	background: rgb(2, 0, 36);
-	background: rgb(2, 0, 36);
-	background: linear-gradient(
-		0deg,
-		rgba(2, 0, 36, 0.7819502801120448) 0%,
-		rgba(9, 77, 121, 0.24413515406162467) 56%,
-		rgba(201, 82, 82, 1) 100%
-	);
+	background: rgb(34, 193, 195);
+	background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
