@@ -82,7 +82,21 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	background-color: black;
+	// background-color: gray;
+	///* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.46+0,0+100 */
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		top,
+		rgba(0, 0, 0, 0.46) 0%,
+		rgba(0, 0, 0, 0) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.46) 0%,
+		rgba(0, 0, 0, 0) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
 	&._loaded {
 	}
 }
@@ -123,8 +137,12 @@ p {
 	line-height: 24 / 20 * 100%;
 	font-weight: 700;
 	margin: 0px 0px 20px 0px;
-	background: rgb(34, 193, 195);
-	background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+	background: rgb(23, 15, 115);
+	background: linear-gradient(
+		0deg,
+		rgba(23, 15, 115, 0.8407738095238095) 0%,
+		rgba(182, 72, 72, 0.8743872549019608) 50%
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -143,7 +161,20 @@ p {
 	left: 0px;
 	width: 100%;
 	height: 30px;
-	background-color: cyan;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0+0,1+0,0.43+100 */
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.43) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		top,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0.43) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0.43) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#6e000000',GradientType=0 ); /* IE6-9 */
+
 	margin: 0px 0px 20px 0px;
 	border: 1px solid black;
 	z-index: 10;
@@ -246,7 +277,7 @@ p {
 	// .content__text
 	&__text {
 		font-size: 20px;
-		color: black;
+		color: wheat;
 		margin: 0 auto;
 		text-align: left;
 		margin: 0px 0px 0px 0px;
@@ -290,7 +321,34 @@ p {
 	font-size: 0px;
 	box-shadow: 2px 2px 5px gold, -2px -2px 5px greenyellow;
 	border-radius: 20px;
-	background-color: lightcyan;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.38+7,0.5+50,0.57+85 */
+	background: -moz-linear-gradient(
+		top,
+		rgba(0, 0, 0, 0.38) 0%,
+		rgba(0, 0, 0, 0.38) 7%,
+		rgba(0, 0, 0, 0.5) 50%,
+		rgba(0, 0, 0, 0.57) 85%,
+		rgba(0, 0, 0, 0.57) 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		top,
+		rgba(0, 0, 0, 0.38) 0%,
+		rgba(0, 0, 0, 0.38) 7%,
+		rgba(0, 0, 0, 0.5) 50%,
+		rgba(0, 0, 0, 0.57) 85%,
+		rgba(0, 0, 0, 0.57) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.38) 0%,
+		rgba(0, 0, 0, 0.38) 7%,
+		rgba(0, 0, 0, 0.5) 50%,
+		rgba(0, 0, 0, 0.57) 85%,
+		rgba(0, 0, 0, 0.57) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61000000', endColorstr='#91000000',GradientType=0 ); /* IE6-9 */
+
+	// background-color: lightcyan;
 	margin: 0px 5px 10px 5px;
 	@media (max-width: 840px) {
 		font-size: 45px;
